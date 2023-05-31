@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/film')]
+#[Route('/film',name:'film')]
 class FilmController extends AbstractController
 {
     #[Route('/', name: 'app_film_index', methods: ['GET'])]
